@@ -77,8 +77,6 @@ public class genericsTest {
 		Integer[] IntArr = {2, 4, 6, 7};
 		Box4<Integer> b7 = new Box4<Integer>(IntArr);
 		System.out.println(b7);
-		b7.setItem(IntArr, 2);
-
 		
 	}
 }
