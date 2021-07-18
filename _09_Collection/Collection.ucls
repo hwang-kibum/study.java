@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="_09_Collection.Stack_Queue" project="javaStudy" 
+    file="/javaStudy/src/_09_Collection/Stack_Queue.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="113" x="783" y="218"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="_09_Collection.Arrays.student" project="javaStudy" 
+    file="/javaStudy/src/_09_Collection/Arrays/newArrayListTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="137" x="837" y="318"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="_09_Collection.Arrays.ArraysEtcMethod" project="javaStudy" 
+    file="/javaStudy/src/_09_Collection/Arrays/ArraysEtcMethod.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="122" x="1014" y="318"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="_09_Collection.Arrays.newArrayListTest" project="javaStudy" 
+    file="/javaStudy/src/_09_Collection/Arrays/newArrayListTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="124" x="1176" y="318"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="_09_Collection.Arrays.ArraysCopyTest" project="javaStudy" 
+    file="/javaStudy/src/_09_Collection/Arrays/ArraysCopyTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="114" x="1340" y="318"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="_09_Collection.Arrays.asListTest" project="javaStudy" 
+    file="/javaStudy/src/_09_Collection/Arrays/asListTest.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="113" x="1494" y="318"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="_09_Collection.Arrays.ArraysFill" project="javaStudy" 
+    file="/javaStudy/src/_09_Collection/Arrays/ArraysFill.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="113" x="1647" y="318"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
