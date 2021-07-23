@@ -13,7 +13,7 @@ class Thread01 extends Thread {
 		}
 	}
 }
-public class ThreadTest01 {
+class ThreadTest01 {
 	public static void main(String[] args) {
 		Thread01 t01 = new Thread01();
 		t01.run();

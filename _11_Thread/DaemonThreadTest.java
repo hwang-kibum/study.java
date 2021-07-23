@@ -1,6 +1,6 @@
 package _11_Thread;
 
-public class DaemonThreadTest implements Runnable {
+class DaemonThreadTest implements Runnable {
 	static boolean autoSave = false;
 	
 	public void run() {

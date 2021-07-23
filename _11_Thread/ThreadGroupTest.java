@@ -1,7 +1,7 @@
 package _11_Thread;
 
 
-public class ThreadGroupTest {
+class ThreadGroupTest {
 	public static void main(String[] args) throws Exception{
 		ThreadGroup main = Thread.currentThread().getThreadGroup();
 		ThreadGroup grp1 = new ThreadGroup("Group1");

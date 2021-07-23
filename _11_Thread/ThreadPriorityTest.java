@@ -17,7 +17,7 @@ class Thread03_2 extends Thread {
 		}
 	}
 }
-public class ThreadPriorityTest {
+class ThreadPriorityTest {
 	public static void main(String[] args) {
 		Thread03_1 th1 = new Thread03_1();
 		Thread03_2 th2 = new Thread03_2();
