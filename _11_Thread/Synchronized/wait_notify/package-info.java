@@ -1,0 +1,1 @@
+package _11_Thread.Synchronized.wait_notify;
