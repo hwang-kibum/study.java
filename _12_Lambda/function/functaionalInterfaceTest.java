@@ -7,7 +7,7 @@ import java.util.function.*;
 public class functaionalInterfaceTest {
 
 	public static void main(String[] args) {
-		IntSupplier s = () -> (int) (Math.random()*100)+1;
+		IntSupplier s =() -> (int) (Math.random()*100)+1;
 		IntConsumer c = i -> System.out.print(i+",");
 		IntPredicate p = i -> i%2==0;
 		IntUnaryOperator op = i -> i/10*10; 
