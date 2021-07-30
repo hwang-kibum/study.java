@@ -1,6 +1,7 @@
 package _12_Stream.middeleOperator;
 
-import java.util.Comparator;
+import java.util.IntSummaryStatistics;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class Student01 implements Comparable<Student01>{
@@ -28,7 +29,6 @@ public class Student01 implements Comparable<Student01>{
 	}
 	
 	public static void main(String[] args) {
-		Student01 s = new Student01();
 		Stream<Student01> stuStrm = Stream.of( new Student01("이자바", 3, 300),
 											new Student01("김자바", 1, 200), 
 											new Student01("안자바", 2, 100), 
@@ -36,10 +36,22 @@ public class Student01 implements Comparable<Student01>{
 											new Student01("소자바", 1, 200),
 											new Student01("나자바", 3, 290), 
 											new Student01("감자바", 3, 180));
-		Stream<Integer> studentScoreStrm1 = stuStrm.map(s-> i.getToScore());
-		studentScoreStrm1.forEach(System.out::println);
 		
-		Stream<Integer> studentScoreStrm2 = stuStrm.map(Student01::getToScore);
+		
+//		Stream<Integer> studentScoreStrm = stuStrm.map(Student01::getToScore);
+//		studentScoreStrm.peek(i->System.out.printf("%d%n", i))
+//						.forEach(System.out::println);
+		
+
+		IntStream studentScoreIntStrm = stuStrm.mapToInt(Student01::getToScore);
+//		long allTotalSore = studentScoreIntStrm.count();
+//		System.out.println(allTotalSore);
+		
+//		studentScoreIntStrm = stuStrm.mapToInt(Student01::getToScore);
+		IntSummaryStatistics stat = studentScoreIntStrm.summaryStatistics();
+		long totalCount = stat.getCount();
+		System.out.println(totalCount);
+
 		
 	}
 
