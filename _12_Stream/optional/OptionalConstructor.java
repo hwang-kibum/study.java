@@ -21,7 +21,6 @@ public class OptionalConstructor {
 		Optional<String> strOpt8 = Optional.ofNullable(new String("abc"));
 
 		
-		
 		Optional<String> strOpt9 = null; //null로 초기화  비추...
 		Optional<String> strOpt10 = Optional.<String>empty();  //빈객체로 초기화
 		
