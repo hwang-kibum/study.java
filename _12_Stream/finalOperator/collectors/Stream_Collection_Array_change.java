@@ -84,7 +84,7 @@ public class Stream_Collection_Array_change {
 //		import static java.util.stream.Collectors.*; 해야 한다.
 		human h1 =new human("8304221000000","둘리",1983,04,22, "Seoul");
 		human h2 = new human("9004302000000", "홍길동", 1990, 56, 78, "hanyang");
-		System.out.println(h1.compareTo(h2));
+		System.out.println(h1.compareTo(h2));   //-7
 
 		human[] huArr = { new human("8304221000000","둘리",1983,04,22, "Seoul"),
 						  new human("9004302000000", "홍길동", 1990, 56, 78, "hanyang"),
@@ -92,44 +92,45 @@ public class Stream_Collection_Array_change {
 		//human 배열에서 이름정보만 추출해 String타입 리스트로 
 		List<human> humanList = Stream.of(huArr)
 												.collect(Collectors.toList());
-		out.println(humanList);
+		out.println(humanList); //[_12_Stream.finalOperator.collectors.human@18ef96, _12_Stream.finalOperator.collectors.human@6956de9, _12_Stream.finalOperator.collectors.human@769c9116]
+
 		
 		Stream<String> humanRegiId= Stream.of(huArr).map(human::getRegi_number);
 		
 		Stream<Long> strmLongRegiId = Stream.of(huArr).map(human::chRegi_id);
 		strmLongRegiId.sorted()
-					.forEach(System.out::println);
+				.forEach(System.out::println);/* 8304221000000 
+											   * 8808081000000 
+											   * 9004302000000 */
+
 		strmLongRegiId = Stream.of(huArr).map(human::chRegi_id);
 		long count1 = strmLongRegiId.count();
-		out.println("count1: "+ count1);
+		out.println("count1: "+ count1);     //count1: 3
 		
 		strmLongRegiId = Stream.of(huArr).map(human::chRegi_id);
 		long count2 = strmLongRegiId.collect(Collectors.counting());
-		out.println("count2: " +count2);
+		out.println("count2: " +count2);    //count2: 3
 		
 		strmLongRegiId = Stream.of(huArr).map(human::chRegi_id);
 		long summing1  = strmLongRegiId.collect(Collectors.summingLong(s->s));
-		out.println(summing1);
+		out.println(summing1);   //26116604000000
 		
 		strmLongRegiId = Stream.of(huArr).map(human::chRegi_id);
 		double average = strmLongRegiId.collect(Collectors.averagingLong(s->s));
-		out.println(average);
+		out.println(average);   //8.705534666666667E12
 		
 		Stream<Integer> humanyear= Stream.of(huArr).map(human::getYOB);
 		average =humanyear.collect(Collectors.averagingInt(s->s));
-		out.println(average);
+		out.println(average);   //1987.0
 		
 		humanList = Stream.of(huArr).collect(Collectors.toList());
 		Stream<human> humanStrm = humanList.stream();
 		int YOB = humanStrm.collect(Collectors.reducing(0, human::getYOB, Integer::sum));
-		out.println(YOB);
+		out.println(YOB);  //5961
 		
 		Stream<String> Name = humanList.stream().map(human::getName);
 		String test = Name.collect(Collectors.joining("-","<",">"));
-		
-		out.println(test);
-		
-		
-	}	
+		out.println(test);  //<둘리-홍길동-호돌이>
 
+	}	
 }
