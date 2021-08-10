@@ -1,9 +1,11 @@
-package javaStudy._08_Format;
+package _08_Format;
 
-import java.time.*;
-import java.time.format.*;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
-public class Parsing_formatTest {
+public class parsing_formatTest1 {
 	public static void main(String[] args) {
 		
 		LocalDate newYear = LocalDate.parse("2016-01-01", DateTimeFormatter.ISO_LOCAL_DATE);
@@ -21,7 +23,6 @@ public class Parsing_formatTest {
 		DateTimeFormatter pattern = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		LocalDateTime endOfYear = LocalDateTime.parse("2015-12-31 23:59:59", pattern);
 		System.out.println(endOfYear);  //2015-12-31T23:59:59
-
 	}
 
 }

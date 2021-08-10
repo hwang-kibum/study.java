@@ -1,4 +1,4 @@
-package _09_Collection.Arrays;
+package _09_Collection.List;
 
 import java.util.Arrays;
 import java.util.List;
@@ -10,7 +10,7 @@ public class asListTest {
 		List<Integer> list1 = Arrays.asList(1,2,3,4,5);
 
 		
-		System.out.println("list0ÀÇ »çÀÌÁî : "+list0.size());
+		System.out.println("list0ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : "+list0.size());
 		for(int i = 0; i<list0.size();i++) {
 			System.out.println(list0.get(i));
 		}

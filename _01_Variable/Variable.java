@@ -1,4 +1,4 @@
-package javaStudy._01_Variable;
+package _01_Variable;
 
 public class Variable {
 	public static void main(String[] args) {
@@ -6,11 +6,11 @@ public class Variable {
 		int binNum = 6543;
 		char c = 'a';
 		
-		//Integer.toBinaryString(int i); 10Áø¼ö¸¦ 2Áø¼ö·Î Ãâ·Â 2Áø¼ö ¹®ÀÚ¿­·Î º¯È¯ÇØ  »ç¿ë.
+		//Integer.toBinaryString(int i); 10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯ï¿½ï¿½  ï¿½ï¿½ï¿½.
 		System.out.printf("binNum = %s%n", binNum);
 		System.out.printf("(Integer)binNum = %d%n", (Integer)binNum);
 		System.out.printf("Integer.toBinaryString(binNum) = %s%n", Integer.toBinaryString(binNum));
-		System.out.printf("c = %c,(int)c = %d %n", c, (int)c);  //Çüº¯È¯ÀÌ ²À ÇÊ¿äÇÏ´Ù.
+		System.out.printf("c = %c,(int)c = %d %n", c, (int)c);  //ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½Ï´ï¿½.
 		
 	}
 }

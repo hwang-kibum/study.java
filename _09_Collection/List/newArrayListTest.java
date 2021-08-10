@@ -1,4 +1,4 @@
-package _09_Collection.Arrays;
+package _09_Collection.List;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,7 +21,7 @@ class student extends ArrayList implements Comparable<student>{
 	
 	@Override 
 	public String toString() {
-		return "¹øÈ£: " + num +"\n" + "ÀÌ¸§: "+name;
+		return "ï¿½ï¿½È£: " + num +"\n" + "ï¿½Ì¸ï¿½: "+name;
 	}
 	
 	@Override
