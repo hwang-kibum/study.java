@@ -1,6 +1,7 @@
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class File_In_outStream {
 	public static void main(String[] args) throws IOException {
@@ -18,7 +19,7 @@ public class File_In_outStream {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 		
 	}
 

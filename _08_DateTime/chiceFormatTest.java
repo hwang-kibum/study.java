@@ -5,11 +5,11 @@ import java.text.ChoiceFormat;
 public class chiceFormatTest {
 
 	public static void main(String[] args) {
-		double[] limits = {50, 60, 70, 80, 90};  //³·Àº °ªºÎÅÍ Å« °ªÀÇ ¼ø¼­·Î Àû¾î¾ßÇÑ´Ù.
+		double[] limits = {50, 60, 70, 80, 90};  //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Å« ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½. 
 		
 		int[] scores = {100, 95, 88, 70, 52, 60, 70, 40};
 		
-		//limits, grades°£ÀÇ ¼ø¼­¿Í °³¼ö¸¦ ¸ÂÃß¾î¾ß ÇÑ´Ù.
+		//limits, gradesï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ß¾ï¿½ï¿½ ï¿½Ñ´ï¿½.
 		String[] grades = { "E", "D", "C", "B", "A"};
 		ChoiceFormat form = new ChoiceFormat(limits, grades);
 		
